@@ -1,33 +1,33 @@
 body{
     background-color: hsl(0, 100%, 74%);
-    background-image: url(./image/bg-intro-desktop.png);
+    background-image: url(./images/bg-intro-desktop.png);
 }
 
 .writeUp{
     float: left;
-    width: 43%;
-    margin-top: 18%;
-    margin-left: 1.8%;
+    width: 35%;
+    margin-top: 17%;
+    margin-left: 11.5%;
 }
 .container{
     float: right;
-    width: 50%;
-    margin-top: 5%;
+    width: 49%;
+    margin-top: 8%;
     display: block;
 }
-h2{
+.writeUp h2{
     font-size: 45px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-p{
+.writeUp p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(243, 239, 239, 0.925);
     font-size: 1em;
 }
 .top{
     background-color: rgb(41, 41, 155);
-    width: 95%;
+    width: 75%;
     height: 40px;
     text-align: center;
     padding-top: 0.2em;
@@ -41,7 +41,7 @@ input{
     width: 82%;
     height: 50px;
     border-radius: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     padding: 3px;
     padding-left: 30px;
     border: 0.5px solid rgb(147, 175, 197);
@@ -64,10 +64,11 @@ span{
     background-color: white;
     text-align: center;
     padding-top: 31px;
-    padding-bottom: 24px;
-    height: 446px;
+    padding-bottom: 70px;
+    /* margin-right: 20px; */
+    height: 375px;
     border-radius: 5px;
-    width: 95%;
+    width: 75%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 1px 8px 8px rgb(94, 92, 92);
 }
@@ -76,8 +77,9 @@ span{
     opacity: 1;
     font-size: larger;
   }
-h6{
-    margin-top: -25px;
+.signup h6{
+    margin-top: 0px;
+    padding-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(190, 185, 185, 0.596);
     font-size: 0.7em;
@@ -86,3 +88,60 @@ a{
     color: rgb(192, 58, 58);
     text-decoration: none;
 }
+
+
+/*reponsiveness */
+
+
+
+@media (max-width: 710px) {
+    .wrapper{
+    display:flex;
+    flex-direction: column;
+   } 
+   .writeUp{
+       margin-left: 0px;
+       width: 100%;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    margin-top: 5%;
+
+}
+.writeUp h2{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.writeUp p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(243, 239, 239, 0.925);
+    font-size: 1em;
+}
+.top{
+    background-color: rgb(41, 41, 155);
+    width: 95%;
+    height: 40px;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 1px 4px 8px rgb(94, 92, 92);
+    margin-left: 3%;
+
+}
+.signup{
+    background-color: white;
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 24px;
+    height: 446px;
+    border-radius: 5px;
+    width: 95%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 1px 8px 8px rgb(94, 92, 92);
+    margin-left: 3%;
+}
+  }
